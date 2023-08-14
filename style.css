@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-size: 1rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+.container {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    width: 20rem;
+}
+
+.top-img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.description {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    color: var(--Very-Dark-Magenta);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: .9;
+}
+
+.ratings {
+    display: grid;
+    gap: 1rem;
+}
+
+.ratings p {
+    font-weight: 700;
+}
+
+.one {
+    background: var(--Light-Grayish-Magenta);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.testimonials {
+    display: grid;
+    gap: 1rem;
+    color: var(--White);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex img {
+    border-radius: 50%;
+    width: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    font-size: .8rem;
+}
+
+.grid h2,
+.grid h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.grid h3 {
+    color: var(--Soft-Pink);
+}
+
+.testimonials div {
+    padding: 1rem;
+    background: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+}
+
+.testimonials p {
+    padding-inline: 1rem;
+}
+
+.bottom-img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 70rem;
+        height: 45rem;
+    }
+
+    .description {
+        display: grid;
+        gap: 10rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .top {
+        text-align: start;
+    }
+
+    .ratings {
+        padding: 1rem;
+    }
+
+    .one {
+        width: fit-content;
+        height: 2rem;
+        align-items: center;
+        margin: 0;
+        display: flex;
+        padding-inline: 2rem;
+        gap: 1rem;
+    }
+
+    .one:nth-of-type(2) {
+        transform: translatex(4rem);
+    }
+
+    .one:last-of-type {
+        transform: translatex(8rem);
+    }
+
+    .one p {
+        margin: 0;
+    }
+
+    .testimonials {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .irene-roberts {
+        transform: translateY(2rem);
+    }
+
+    .anne-wallace {
+        transform: translateY(4rem);
+    }
+
+    .bottom-img {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
