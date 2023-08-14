@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-The <picture> tag is of those HTML i have recently discorvered and they are a game changer. Avoids usage of JavaScript with regards to changing image based on the screen width and reinforces my semantic HTML skills.
+The picture tag is of those HTML i have recently discorvered and they are a game changer. Avoids usage of JavaScript with regards to changing image based on the screen width and reinforces my semantic HTML skills.
 
 ```html
  <picture>
